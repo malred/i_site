@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>example connected</h1>
+    {# 这里就是去my_app下的urls.py里找name为variable的url路径 #}
+    <h2><a href="{% url 'my_app:variable' %}">Go to variable.html</a></h2>
+</body>
+</html>

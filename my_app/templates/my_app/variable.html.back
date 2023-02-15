@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>VARIABLE.HTML</h1>
+<!--字符串变量-->
+<h2>hello {{first_name}} {{last_name}}</h2>
+<!--
+    filter
+        upper: 转大写
+        length: 得到该变量长度
+-->
+<h2>hello {{first_name|upper}} {{last_name|length}}</h2>
+<!--
+    filter
+        capfirst: 首字母转大写
+        lower: 转小写
+        可以叠加使用,从左到右依次执行
+-->
+<h2>hello {{first_name|upper|lower|capfirst}} {{last_name|capfirst}}</h2>
+<!--list变量-->
+<h2>{{some_list}}</h2>
+<h2>some_list第一项: {{some_list.0}}</h2>
+<!--字典变量-->
+<h2>{{some_dict}}</h2>
+<h2>字典的值: {{some_dict.inside_key}}</h2>
+<h2>{# 模板的注释 this is a comment 不会显示在页面里 #}</h2>
+</body>
+</html>

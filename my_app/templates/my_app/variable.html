@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>VARIABLE.HTML</h1>
+<!--等号两边要留空格,否则html解析为字符串-->
+<!--Could not parse the remainder-->
+{# {% if first_name=='Rosalind' %} <- 错误写法 #}
+    <h2>rosilind</h2>
+{% if first_name == 'Rosalind' %}
+<ul>
+    {% endif %}
+    {% for num in some_list %}
+    {% if num == 2 %}
+    <li>TWO</li>
+    {% elif num > 2 %}
+    <li>>2</li>
+    {% else %}
+    <li><2</li>
+    {% endif %}
+    {% endfor %}
+</ul>
+</body>
+</html>
